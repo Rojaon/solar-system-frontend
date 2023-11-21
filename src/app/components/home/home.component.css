@@ -1,0 +1,85 @@
+.card{
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.theschoolrun.com/sites/theschoolrun.com/files/istock_000015579600medium.jpg');
+}
+.message{
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0/15%);
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 400px;
+    transform: translate(-50%,-50%);
+}
+h3{
+    font-size: 22px;
+    font-weight: bold;
+}
+p{
+    font-size: 18px;
+}
+.star{
+    background-color: rgb(0, 0, 0);
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    filter: contrast(80%);
+    background-image: url('https://www.theschoolrun.com/sites/theschoolrun.com/files/istock_000015579600medium.jpg');
+}
+.container{
+    width: 850px;
+    text-align:justify;
+    display: grid;
+}
+h2{
+    font-weight: lighter;
+    font-size: 18px;
+    width: 400px;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.644);
+    border-radius: 5px;
+    padding: 8px;
+}
+.box11, .box33, .text2{
+    float: right;
+}
+img{
+    display: flex;
+    border-radius: 9px;
+}
+h2:hover{
+    background-color: rgba(0, 0, 0, 0.888);
+}
+.text1 , .text3 ,.box22{
+    float: left;
+}
+.text1{
+    height: 240px;
+}
+.text2{
+    height: 180px;
+}
+.text3{
+    height: 180px;
+}
+.box1, .box2, .box3{
+    margin-top: 5px;
+    padding: 5px;
+}
+h1{
+    font-size: 18px;
+    position: absolute;
+    color: aliceblue;
+    padding-left: 10px;
+}
+h1:hover{
+    font-size: 18px;
+    text-decoration: underline;
+}

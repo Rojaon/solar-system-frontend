@@ -1,0 +1,21 @@
+div{
+    height: 70px;
+    /* background-color: rgba(0, 0, 0, 0.174); */
+    margin-bottom: 8px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border: 1px rgb(78, 94, 202) dashed;
+    border-radius: 5px;
+}
+img{
+    float: inline-start;
+    margin-top: 15px;
+    padding-right: 20px;
+}
+h1{
+    float: left;
+}
+.righ-img{
+    float: right;
+    margin-right: 10px;
+}
