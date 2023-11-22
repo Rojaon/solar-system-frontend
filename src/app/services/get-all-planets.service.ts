@@ -7,11 +7,11 @@ import { Observable } from "rxjs";
 })
 export class GetAllPlanetsService {
 
-  private readonly API_URL = "https://randomuser.me/api";
+  private readonly API_URL = 'http://localhost:8080/api/planets';
  
   constructor(private http: HttpClient) {}
  
-  getRandomUser(): Observable<any> {
-    return this.http.get<any>(this.API_URL + "/");
+  getPlanets(): Observable<any> {
+    return this.http.get<any>(this.API_URL);
   }
 }

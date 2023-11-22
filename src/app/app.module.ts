@@ -13,6 +13,7 @@ import { MoonDatailComponent } from './components/moon-datail/moon-datail.compon
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from "@angular/common/http";
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
