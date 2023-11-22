@@ -1,6 +1,5 @@
 div{
     height: 70px;
-    /* background-color: rgba(0, 0, 0, 0.174); */
     margin-bottom: 8px;
     margin-left: 3px;
     margin-right: 3px;
@@ -17,5 +16,8 @@ h1{
 }
 .righ-img{
     float: right;
-    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
 }

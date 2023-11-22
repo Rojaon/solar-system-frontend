@@ -1,0 +1,11 @@
+div{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    background-color: rgb(41, 41, 41, 0.8);
+    padding: 10px;
+}

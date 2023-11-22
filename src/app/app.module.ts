@@ -12,6 +12,7 @@ import { PlanetDetailComponent } from './components/planet-detail/planet-detail.
 import { MoonDatailComponent } from './components/moon-datail/moon-datail.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from "@angular/common/http";
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClientModule } from "@angular/common/http";
     FooterComponent,
     AddMoonFormComponent,
     PlanetDetailComponent,
-    MoonDatailComponent
+    MoonDatailComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
