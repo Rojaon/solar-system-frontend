@@ -14,4 +14,10 @@ export class GetAllPlanetsService {
   getPlanets(): Observable<any> {
     return this.http.get<any>(this.API_URL);
   }
+  getPlanet(id: string): Observable<any> {
+    return this.http.get<any>(`${this.API_URL}/${id}`);
+  }
+  patchPlanet(body: any,id: string): Observable<any> {
+    return this.http.patch<any>(`${this.API_URL}/diameterInKm/${id}`, body);
+  }
 }

@@ -1,5 +1,9 @@
-<ul>
-    <li *ngFor="let planet of planets">
-      <p>{{ planet.name }}</p>
-    </li>
-  </ul>
+<div class="page">
+  <div class="container">
+      <div class="grid-item" *ngFor="let planet of planets"><a [routerLink]="['/planet', planet.name]">
+        <img src = {{planet.img}} alt="Planet" width="200px">
+        <p>{{ planet.name }}</p>
+      </a >
+      </div>
+  </div>
+  </div>

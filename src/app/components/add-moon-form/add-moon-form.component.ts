@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { GetAllMoonsService } from 'src/app/services/get-all-moons.service';
 
 @Component({
@@ -8,26 +10,35 @@ import { GetAllMoonsService } from 'src/app/services/get-all-moons.service';
 })
 export class AddMoonFormComponent {
 
-  name: string = "";
-  diameterInKm: number = 0;
-  yearDiscovered: string = "";
-  planetName: string = "";
-  img: string = "";
+  registerForm: FormGroup;
+  name: FormControl;
+  diameterInKm: FormControl;
+  yearDiscovered: FormControl;
+  planetName: FormControl;
+  img: FormControl;
 
-  constructor(private getAllMoonsService: GetAllMoonsService) {}
+  constructor(private getAllMoonsService: GetAllMoonsService, private router: Router) {
+    this.name = new FormControl("", Validators.required);
+    this.diameterInKm = new FormControl("", Validators.required);
+    this.yearDiscovered = new FormControl("", Validators.required);
+    this.planetName = new FormControl("", Validators.required);
+    this.img = new FormControl("");
 
-  postMoon(): void {
-    const body = {
+    this.registerForm = new FormGroup({
       name: this.name,
       diameterInKm: this.diameterInKm,
       yearDiscovered: this.yearDiscovered,
       planetName: this.planetName,
       img: this.img,
-    };
+    })
+  }
 
-    this.getAllMoonsService.postMoon(body).subscribe({
+  postMoon(): void {
+
+    this.getAllMoonsService.postMoon(this.registerForm.value).subscribe({
       next: (data) => {
         alert("Moon created successfully");
+        this.router.navigate(['/']);
       },
       error: (e) => {
         console.log(e);        

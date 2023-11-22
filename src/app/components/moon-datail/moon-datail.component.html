@@ -1,1 +1,8 @@
-<p>moon-datail works!</p>
+<div>
+    <img src = {{moon.img}} alt="Moon" width="400px" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTE26puTfnDw9zkEVmMdZ5jqiiO4zaoK_mUvHBZ66BZSEhbgxrcehMxOAro76jynV8R4w&usqp=CAU'">
+    <h3>Moon name: {{ id }}</h3>
+    <h3>Diameter In Km: {{ moon.diameterInKm }}</h3>
+    <h3>Year Discovered: {{ moon.yearDiscovered }}</h3>
+    <h3>Planet Name: {{ moon.planetName }} Planet</h3>
+    <button (click)="removeMoon(moon.name)" >Delete {{ id }}</button>
+  </div>

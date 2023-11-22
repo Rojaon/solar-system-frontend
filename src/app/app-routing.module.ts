@@ -5,6 +5,8 @@ import { PlanetComponent } from './components/planet/planet.component';
 import { MoonComponent } from './components/moon/moon.component';
 import { AddMoonFormComponent } from './components/add-moon-form/add-moon-form.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { MoonDatailComponent } from './components/moon-datail/moon-datail.component';
+import { PlanetDetailComponent } from './components/planet-detail/planet-detail.component';
 
 const routes: Routes = [
   {
@@ -22,6 +24,14 @@ const routes: Routes = [
   {
     path: "add-moon-form",
     component: AddMoonFormComponent
+  },
+  {
+    path: "moon/:id",
+    component: MoonDatailComponent
+  },
+  {
+    path: "planet/:id",
+    component: PlanetDetailComponent
   },
   {
     path: "page-not-found",

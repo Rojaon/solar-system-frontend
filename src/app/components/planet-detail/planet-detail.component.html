@@ -1,1 +1,25 @@
-<p>planet-detail works!</p>
+<div class="container">
+    <img src = {{planet.img}} alt="Planet" width="400px">
+    <h3>Planet name: {{ id }}</h3>
+    <h3>Diameter In Km: {{ planet.diameterInKm }}</h3>
+    <h3>Planet Type: {{ planet.properties.planetType }}</h3>
+    <h3>Distance From Sun In Km: {{ planet.properties.distanceFromSunInKm }}</h3>
+    <button (click)="changeIsShown()" class="bttn2">Update {{ id }} diameter</button>
+
+    <div *ngIf="isShown" class="update">
+        <form (ngSubmit)="updateDiameter()" [formGroup]="registerForm">
+        <input type="text" placeholder="Diameter In Km..." formControlName="diameterInKm" />
+        <br>
+        <button type="submit" [disabled]="registerForm.invalid" class="bttn1">Update</button>
+        <button (click)="changeIsShown()" class="bttn1">Cancel</button>
+    </form>
+    </div>
+
+    <div class="contain">
+    <div class="grid-item" *ngFor="let moon of planet.moonList"><a [routerLink]="['/moon', moon.name]">
+        <img src = {{moon.img}} alt="Moon" width="200px" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTE26puTfnDw9zkEVmMdZ5jqiiO4zaoK_mUvHBZ66BZSEhbgxrcehMxOAro76jynV8R4w&usqp=CAU'">
+        <p>{{ moon.name }}</p>
+      </a >
+      </div>
+    </div>
+</div>

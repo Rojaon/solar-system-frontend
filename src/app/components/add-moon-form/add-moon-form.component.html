@@ -1,1 +1,42 @@
-<p>add-moon-form works!</p>
+<div class="container">
+    <form (ngSubmit)="postMoon()" [formGroup]="registerForm">
+      <div>
+        <h1>Name</h1>
+        <input type="text" placeholder="Name..." formControlName="name" />
+        <p class="error-msg" *ngIf="name.invalid && name.touched">
+          Name is required.
+        </p>
+      </div>
+      <div>
+        <h1>Diameter In Km</h1>
+        <input type="text" placeholder="Diameter In Km..." formControlName="diameterInKm" />
+        <p class="error-msg" *ngIf="diameterInKm.invalid && diameterInKm.touched">
+            Diameter In Km is required.
+        </p>
+      </div>
+      <div>
+        <h1>Year Discovered</h1>
+        <input type="text" placeholder="Year Discovered..." formControlName="yearDiscovered" />
+        <p class="error-msg" *ngIf="yearDiscovered.invalid && yearDiscovered.touched">
+            Year Discovered is required.
+        </p>
+      </div>
+      <div>
+        <h1>Planet Name</h1>
+        <input type="text" placeholder="Planet Name..." formControlName="planetName" />
+        <p class="error-msg" *ngIf="planetName.invalid && planetName.touched">
+            Planet Name is required.
+        </p>
+      </div>
+      <div>
+        <h1>Img</h1>
+        <input type="text" placeholder="Img..." formControlName="img" />
+      </div>
+      <button
+        type="submit"
+        [disabled]="registerForm.invalid"
+      >
+        Submit
+      </button>
+    </form>
+  </div>

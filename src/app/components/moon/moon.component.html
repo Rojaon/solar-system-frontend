@@ -1,5 +1,9 @@
-<ul>
-    <li *ngFor="let moon of moons">
+<div class="page">
+<div class="container">
+    <div class="grid-item" *ngFor="let moon of moons"><a [routerLink]="['/moon', moon.name]">
+      <img src = {{moon.img}} alt="Moon" width="200px" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTE26puTfnDw9zkEVmMdZ5jqiiO4zaoK_mUvHBZ66BZSEhbgxrcehMxOAro76jynV8R4w&usqp=CAU'">
       <p>{{ moon.name }}</p>
-    </li>
-  </ul>
+    </a >
+    </div>
+</div>
+</div>
