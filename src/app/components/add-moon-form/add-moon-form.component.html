@@ -1,7 +1,7 @@
 <div class="container">
     <form (ngSubmit)="postMoon()" [formGroup]="registerForm">
       <div>
-        <h1>Name</h1>
+        <h1>Moon Name</h1>
         <input type="text" placeholder="Name..." formControlName="name" />
         <p class="error-msg" *ngIf="name.invalid && name.touched">
           Name is required.
