@@ -17,6 +17,9 @@ p{
     font-weight: bold ;
     margin-left: 60px;
 }
+img{
+    border-radius: 50%;
+}
 img:hover{
     position: absolute;
     width: 400px;
