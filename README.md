@@ -1,40 +1,30 @@
-# SolarSystem
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
 # Solar System Program
+
 This project is about Planets and their moons in the solar system.
+- [Backend Project](https://github.com/Rojaon/solar-system-backend)
+
 ## Table of Contents
-- [UML Class diagram](https://github.com/Rojaon/Solar-System.Midterm-Project#uml-class-diagram)
-- [Set up](https://github.com/Rojaon/Solar-System.Midterm-Project#set-up)
-- [Technologies Used](https://github.com/Rojaon/Solar-System.Midterm-Project#technologies-used)
-- [Controllers and Routes structure](https://github.com/Rojaon/Solar-System.Midterm-Project#controllers-and-routes-structure)
-- [Presentation](https://github.com/Rojaon/Solar-System.Midterm-Project#presentaion-slides)
-- [Future Work](https://github.com/Rojaon/Solar-System.Midterm-Project#future-work)
-- [Resources](https://github.com/Rojaon/Solar-System.Midterm-Project#resources)
+- [UML Class diagram](https://github.com/Rojaon/solar-system-frontend#uml-class-diagram)
+- [Set up](https://github.com/Rojaon/solar-system-frontend#set-up)
+- [Technologies Used](https://github.com/Rojaon/solar-system-frontend#technologies-used)
+- [Controllers and Routes structure](https://github.com/Rojaon/solar-system-frontend#controllers-and-routes-structure)
+- [Presentation](https://github.com/Rojaon/solar-system-frontend#presentaion-slides)
+- [Future Work](https://github.com/Rojaon/solar-system-frontend#future-work)
+- [Resources](https://github.com/Rojaon/solar-system-frontend#resources)
 ------------------------------------------------------------------------------------------
 ### UML Class diagram
 ![class diagram](https://github.com/Rojaon/Solar-System.Midterm-Project/assets/109796364/331cb623-6be2-4dba-a890-fd724778ff1e)
 
 ### Set up
-This project was made by spring initializr and IntelliJ IDEA and some dependencies in pom.xml and you can use DBeaver to see the data.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
 
-
-Dependencies:
-- Spring Data JPA
-- Spring Web
-- MySQL Driver
-- Lombok
+You need to write in terminal: npm install
 
 ### Technologies Used
-Use web browser or Postman to test the program.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-### Controllers and Routes structure
-Planet Controller
+### Components and services structure
+
 |Request Method|URL|What to change|Description|
 |--------------|---|--------------|-----------|
 |Get|http://localhost:8080/api/planets|Nothing|Show all Planets in database|
@@ -46,18 +36,10 @@ Planet Controller
 |Delete|http://localhost:8080/api/planets/delete/Mer|Change the planet ID "Mer"|Delete specific planet|
 
 
-If you want to put some data in the database to test the requests, you need to do some steps:
-
-1- Open 'PlanetRepositoryTest' and comment '@AfterEach' block and run the test.
-
-2- Open 'MoonRepositoryTest' and comment '@AfterEach' block and run the test.
-
-With these steps you have some data to test the requests, and don't forgot to uncomment '@AfterEach' in both classes.
-
 ### Presentaion Slides
 - [Click here](https://docs.google.com/presentation/d/12hUY_EvqZFUlNjxfFlmXMm3ohNhwGCG4zQOtxM2ypwk/edit?usp=sharing)
 ### Future Work
-- Create controller and service for moon class.
+- Improve the styling and the routes.
 ### Resources
 - https://online.visual-paradigm.com
 - https://thesolarsystem.fandom.com/wiki/List_of_the_largest_moons_by_size
