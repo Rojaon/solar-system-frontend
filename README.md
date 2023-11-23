@@ -6,22 +6,59 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# Solar System Program
+This project is about Planets and their moons in the solar system.
+## Table of Contents
+- [UML Class diagram](https://github.com/Rojaon/Solar-System.Midterm-Project#uml-class-diagram)
+- [Set up](https://github.com/Rojaon/Solar-System.Midterm-Project#set-up)
+- [Technologies Used](https://github.com/Rojaon/Solar-System.Midterm-Project#technologies-used)
+- [Controllers and Routes structure](https://github.com/Rojaon/Solar-System.Midterm-Project#controllers-and-routes-structure)
+- [Presentation](https://github.com/Rojaon/Solar-System.Midterm-Project#presentaion-slides)
+- [Future Work](https://github.com/Rojaon/Solar-System.Midterm-Project#future-work)
+- [Resources](https://github.com/Rojaon/Solar-System.Midterm-Project#resources)
+------------------------------------------------------------------------------------------
+### UML Class diagram
+![class diagram](https://github.com/Rojaon/Solar-System.Midterm-Project/assets/109796364/331cb623-6be2-4dba-a890-fd724778ff1e)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Set up
+This project was made by spring initializr and IntelliJ IDEA and some dependencies in pom.xml and you can use DBeaver to see the data.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Dependencies:
+- Spring Data JPA
+- Spring Web
+- MySQL Driver
+- Lombok
 
-## Running unit tests
+### Technologies Used
+Use web browser or Postman to test the program.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Controllers and Routes structure
+Planet Controller
+|Request Method|URL|What to change|Description|
+|--------------|---|--------------|-----------|
+|Get|http://localhost:8080/api/planets|Nothing|Show all Planets in database|
+|Get|http://localhost:8080/api/planets/Earth|Change the planet ID "Earth" with one of the planet in the solar system|Show planet with specified ID|
+|Get|http://localhost:8080/api/planets/properties/planetType?planetType=ROCKY_PLANET|Change the planet type "ROCKY_PLANET" or "ICE_GIANT" or "GAS_GIANT"|Show all planet with specified planet Type|
+|Post|http://localhost:8080/api/planets/add|Nothing|Create new planet in database|
+|Put|http://localhost:8080/api/planets/Saturn|Change the planet ID "Saturn" with one of the planet in the solar system|Update planet|
+|Patch|http://localhost:8080/api/planets/diameterInKm/Neptune|Change the planet ID "Neptune" with one of the planet in the solar system|Update the diameter in specific planet|
+|Delete|http://localhost:8080/api/planets/delete/Mer|Change the planet ID "Mer"|Delete specific planet|
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+If you want to put some data in the database to test the requests, you need to do some steps:
 
-## Further help
+1- Open 'PlanetRepositoryTest' and comment '@AfterEach' block and run the test.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+2- Open 'MoonRepositoryTest' and comment '@AfterEach' block and run the test.
+
+With these steps you have some data to test the requests, and don't forgot to uncomment '@AfterEach' in both classes.
+
+### Presentaion Slides
+- [Click here](https://docs.google.com/presentation/d/12hUY_EvqZFUlNjxfFlmXMm3ohNhwGCG4zQOtxM2ypwk/edit?usp=sharing)
+### Future Work
+- Create controller and service for moon class.
+### Resources
+- https://online.visual-paradigm.com
+- https://thesolarsystem.fandom.com/wiki/List_of_the_largest_moons_by_size
+- https://thesolarsystem.fandom.com/wiki/List_of_Planets
