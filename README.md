@@ -8,6 +8,7 @@ This project is about Planets and their moons in the solar system.
 - [Set up](https://github.com/Rojaon/solar-system-frontend#set-up)
 - [Technologies Used](https://github.com/Rojaon/solar-system-frontend#technologies-used)
 - [Components and services](https://github.com/Rojaon/solar-system-frontend#components-and-services)
+- [Demo](https://github.com/Rojaon/solar-system-frontend#demo)
 - [Presentation](https://github.com/Rojaon/solar-system-frontend#presentaion-slides)
 - [Future Work](https://github.com/Rojaon/solar-system-frontend#future-work)
 - [Resources](https://github.com/Rojaon/solar-system-frontend#resources)
@@ -35,6 +36,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 |Patch|http://localhost:8080/api/planets/diameterInKm/Neptune|Change the planet ID "Neptune" with one of the planet in the solar system|Update the diameter in specific planet|
 |Delete|http://localhost:8080/api/planets/delete/Mer|Change the planet ID "Mer"|Delete specific planet|
 
+### Demo
 
 ### Presentaion Slides
 - [Click here](https://docs.google.com/presentation/d/12hUY_EvqZFUlNjxfFlmXMm3ohNhwGCG4zQOtxM2ypwk/edit?usp=sharing)
