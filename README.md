@@ -7,7 +7,7 @@ This project is about Planets and their moons in the solar system.
 - [UML Class diagram](https://github.com/Rojaon/solar-system-frontend#uml-class-diagram)
 - [Set up](https://github.com/Rojaon/solar-system-frontend#set-up)
 - [Technologies Used](https://github.com/Rojaon/solar-system-frontend#technologies-used)
-- [Controllers and Routes structure](https://github.com/Rojaon/solar-system-frontend#controllers-and-routes-structure)
+- [Components and services](https://github.com/Rojaon/solar-system-frontend#components-and-services)
 - [Presentation](https://github.com/Rojaon/solar-system-frontend#presentaion-slides)
 - [Future Work](https://github.com/Rojaon/solar-system-frontend#future-work)
 - [Resources](https://github.com/Rojaon/solar-system-frontend#resources)
@@ -23,7 +23,7 @@ You need to write in terminal: npm install
 ### Technologies Used
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-### Components and services structure
+### Components and services
 
 |Request Method|URL|What to change|Description|
 |--------------|---|--------------|-----------|
